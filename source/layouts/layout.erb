@@ -6,9 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <title><%= current_page.data.title || "Brian Rolczynski" %></title>
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
@@ -16,5 +14,22 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
+
+    <footer id="copyright">
+      <div class="footer-links">
+        <a href=#>HOME</a>
+        <span class="divider">|</span>
+        <a href=#>RESEARCH</a>
+        <span class="divider">|</span>
+        <a href=#>PUBLICATIONS</a></span>
+        <span class="divider">|</span>
+        <a href=#>CURRICULUM VITAE</a>
+        <span class="divider">|</span>
+        <a href=#>LINKEDIN</a>
+      </div>
+      
+      <p class='copy'>&copy; BRIAN ROLCZYNSKI 2016</p>
+    </footer>
+
   </body>
 </html>
