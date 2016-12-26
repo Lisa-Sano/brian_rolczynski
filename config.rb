@@ -14,9 +14,10 @@ page "/sitemap.xml", layout: false
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
-page "/publications/*", layout: :section
-page "/research/*", layout: :section
-page "/curriculum_vitae/*", layout: :section
+page "/publications/*"
+page "/research/*"
+page "/curriculum_vitae/*"
+page "/", layout: :home
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
