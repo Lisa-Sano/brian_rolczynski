@@ -21,14 +21,21 @@ body {
 h1 {
   font-size: 4em;
   font-weight: normal;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
 }
 
 .jablonski {
-  width: 850px;
+  width: 960px;
 }
 
 /*******************BODY******************/
+
+body.index a.index,
+body.research a.research,
+body.publications a.publications,
+body.curriculum_vitae a.curriculum_vitae {
+  color: #00b3b3;
+}
 
 
 /*******************FOOTER******************/
