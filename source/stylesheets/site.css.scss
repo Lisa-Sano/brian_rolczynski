@@ -8,7 +8,7 @@ body {
   font-family: "Andale Mono", "Lucida Console";
   font-size: 16px;
   color: #fff;
-  width: 960px;
+  width: 1024px;
 }
 
 /*******************HOME******************/
@@ -21,6 +21,10 @@ body {
 h1 {
   font-size: 4em;
   font-weight: normal;
+  margin-bottom: 3rem;
+}
+
+.brian {
   margin-bottom: 8rem;
 }
 
@@ -35,6 +39,22 @@ body.research a.research,
 body.publications a.publications,
 body.curriculum_vitae a.curriculum_vitae {
   color: #00b3b3;
+}
+
+.publications li {
+  text-align: justify;
+  font-size: 1.4rem;
+  font-family: Georgia;
+  margin: 1rem;
+}
+
+.publications ul li {
+  list-style: none;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 
