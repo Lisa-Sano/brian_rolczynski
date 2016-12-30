@@ -2,19 +2,40 @@
 @import "normalize";
 
 body {
-  background: rgb(26,25,25);
+  background: rgb(0,0,0);
   text-align: center;
   margin: auto;
   font-family: "Andale Mono", "Lucida Console";
   font-size: 16px;
   color: #fff;
-  width: 1024px;
 }
 
 /*******************HOME******************/
 
+.jablonski {
+  width: 90%;
+  min-width: 360px;
+  margin-top: 3rem;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .jablonski {
+    max-width: 960px;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  .jablonski {
+    max-width: 960px;
+    margin-top: 3rem;
+  }
+}
+
 .headshot img {
   width: 60%;
+  max-width: 600px;
   margin-top: 2rem;
 }
 
@@ -24,12 +45,9 @@ h1 {
   margin-bottom: 3rem;
 }
 
-.brian {
-  margin-bottom: 8rem;
-}
-
 .jablonski {
-  width: 960px;
+  /*width: 960px;*/
+  margin-top: 3rem;
 }
 
 /*******************BODY******************/
