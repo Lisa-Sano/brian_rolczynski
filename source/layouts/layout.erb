@@ -16,11 +16,13 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "/layouts/partials/header" %>
+    <div class="container">
+      <%= partial "/layouts/partials/header" %>
 
-    <h1><%= current_page.data.header %></h1>
+      <h1><%= current_page.data.header %></h1>
 
-    <%= yield %>
+      <%= yield %>
+    </div>
 
     <%= partial "/layouts/partials/footer" %>
 
