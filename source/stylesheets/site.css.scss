@@ -1,12 +1,20 @@
 @charset "utf-8";
 @import "normalize";
 
+html {
+  font-size: 100%;
+}
+
+html p {
+  margin: 1.5rem auto;
+}
+
 body {
   background: rgb(0,0,0);
   text-align: center;
   margin: auto;
   font-family: "Andale Mono", "Lucida Console";
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
 }
 
@@ -36,52 +44,8 @@ h1 {
   color: #fff;
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .jablonski {
-    max-width: 960px;
-    margin-top: 6rem;
-  }
 
-  h1 {
-    font-size: 4rem;
-  }
-
-  .full_cv {
-    display: block;
-  }
-
-  .cv_button, .instruction {
-    display: none;
-  }
-}
-
-@media only screen and (min-width : 1024px) {
-  .jablonski {
-    max-width: 960px;
-    margin-top: 7rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  .full_cv {
-    display: block;
-  }
-
-  .cv_button, .instruction {
-    display: none;
-  }
-}
-
-.headshot img {
-  width: 60%;
-  max-width: 600px;
-  margin-top: 2rem;
-}
-
-/*******************BODY******************/
+/******************* HEADER ******************/
 
 .header-brian {
   margin-top: 2rem;
@@ -121,6 +85,8 @@ body.about a.about {
   color: #00b3b3;
 }
 
+/******************* PUBLICATIONS ******************/
+
 .publications li {
   text-align: justify;
   font-size: 1.4rem;
@@ -142,12 +108,120 @@ h2 {
   margin: auto;
 }
 
+/******************* CV ******************/
+
 .instruction {
   margin-top: -1.5rem;
 }
 
+/******************* RESEARCH ******************/
 
-/*******************FOOTER******************/
+.research-summary {
+  margin-top: 0;
+}
+
+.research-content {
+  text-align: left;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.research-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.research-content a:hover {
+  color: #aaa;
+}
+
+.research-summary {
+  font-size: 1.6rem;
+}
+
+.research-content li {
+  font-size: 1.4rem;
+}
+
+.research-content ol {
+  margin-left: 0.75rem;
+}
+
+.location {
+  margin-bottom: 0.75rem;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+
+.research-content .description p {
+  /*text-align: justify;*/
+  font-size: 1.25rem;
+}
+
+
+/******************* iPad (portrait and landscape) responsive ******************/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .jablonski {
+    margin-top: 6rem;
+  }
+}
+
+
+/******************* Computer screen responsive ******************/
+
+@media only screen and (min-width : 1024px) {
+  .jablonski {
+    margin-top: 7rem;
+  }
+}
+
+.headshot img {
+  width: 60%;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+
+/******************* All screens (iPad and computer) responsive ******************/
+
+@media only screen and (min-width : 768px) {
+  .jablonski {
+    max-width: 960px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .full_cv {
+    display: block;
+  }
+
+  .cv_button, .instruction {
+    display: none;
+  }
+
+  .research-summary {
+    font-size: 1.85rem;
+  }
+
+  .research-content li {
+    font-size: 1.7rem;
+  }
+
+  .research-content .description p {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .location {
+    font-size: 2.4rem;
+  }
+}
+
+
+/******************* FOOTER ******************/
 
 footer {
   position: absolute;
