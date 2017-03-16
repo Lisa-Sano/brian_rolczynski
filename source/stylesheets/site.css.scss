@@ -18,6 +18,25 @@ body {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #aaa;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ddd;
+  text-decoration: none;
+}
+
+a:active {
+  color: #ddd;
+  text-decoration: none;
+}
+
 /*******************HOME******************/
 
 .jablonski {
@@ -88,24 +107,44 @@ body.about a.about {
 /******************* PUBLICATIONS ******************/
 
 .publications li {
-  text-align: justify;
-  font-size: 1.4rem;
-  font-family: Georgia;
-  margin: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  line-height: 1.1;
+  letter-spacing: -4px;
 }
 
-.publications ul li {
-  list-style: none;
+.publications-section ol {
+  margin-left: 1rem;
 }
 
-h2 {
-  margin-top: 3rem;
-  margin-bottom: 0;
+.publications-section img {
+  width: 85%;
+  display: block;
+  margin: 1rem auto 2rem auto;
+}
+
+.publication-link {
+  text-decoration: none;
+  color: #fff;
 }
 
 .publications-section {
-  max-width: 1024px;
-  margin: auto;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.publications-section h2 {
+  margin: 3rem 0 -1.2rem -3.5rem;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+#expand-all,
+#retract-all {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: 0 1.4rem;
 }
 
 /******************* CV ******************/
@@ -124,15 +163,6 @@ h2 {
   text-align: left;
   margin: 0 auto;
   width: 90%;
-}
-
-.research-content a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.research-content a:hover {
-  color: #aaa;
 }
 
 .research-summary {
@@ -154,7 +184,6 @@ h2 {
 }
 
 .research-content .description p {
-  /*text-align: justify;*/
   font-size: 1.25rem;
 }
 
@@ -217,6 +246,20 @@ h2 {
 
   .location {
     font-size: 2.4rem;
+  }
+
+  .publications li {
+    font-size: 2.2rem;
+    margin-left: 4rem;
+  }
+
+  .publications-section h2 {
+    font-size: 2.4rem;
+  }
+
+  #expand-all,
+  #retract-all {
+    font-size: 2.3rem;
   }
 }
 
