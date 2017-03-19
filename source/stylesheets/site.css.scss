@@ -25,6 +25,7 @@ a {
 a:hover {
   color: #aaa;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 a:visited {
@@ -101,7 +102,7 @@ body.research a.research,
 body.publications a.publications,
 body.curriculum_vitae a.curriculum_vitae,
 body.about a.about {
-  color: #00b3b3;
+  color: #666;
 }
 
 /******************* PUBLICATIONS ******************/
@@ -153,6 +154,12 @@ body.about a.about {
   margin-top: -1.5rem;
 }
 
+/******************* ABOUT ME ******************/
+
+.about-me-content {
+  width: 95%;
+}
+
 /******************* RESEARCH ******************/
 
 .research-summary {
@@ -187,6 +194,20 @@ body.about a.about {
   font-size: 1.25rem;
 }
 
+.research-content li {
+  text-decoration: none;
+  color: #fff;
+}
+
+.research-content li:hover {
+  color: #aaa;
+  transition: 0.3s ease;
+}
+
+.research-content a:focus {
+  outline: none;
+  text-decoration: none;
+}
 
 /******************* iPad (portrait and landscape) responsive ******************/
 
