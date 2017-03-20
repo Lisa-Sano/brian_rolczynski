@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $('.toggle-link').click(function(){
     $(this).text(function(i,old){
-        return old=='[EXPAND]' ?  '[RETRACT]' : '[EXPAND]';
+        return old == '[EXPAND]' ?  '[RETRACT]' : '[EXPAND]';
     });
   });
 
@@ -17,6 +17,14 @@ $(document).ready(function() {
     $('.publications-section br').addClass('hidden');
     $('.publications-section .collapse').collapse('hide');
     $('.toggle-link').text('[EXPAND]');
+  });
+
+  $('#research-expand-all').click(function() {
+    $('.research-content .collapse').collapse('show');
+  });
+
+  $('#research-retract-all').click(function() {
+    $('.research-content .collapse').collapse('hide');
   });
 
   $('#research-icon').hover(function() {

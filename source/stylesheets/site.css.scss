@@ -125,7 +125,8 @@ body.about a.about {
   margin: 1rem auto 2rem auto;
 }
 
-.publication-link {
+.publication-link,
+.research-link {
   text-decoration: none;
   color: #fff;
 }
@@ -139,13 +140,6 @@ body.about a.about {
   margin: 3rem 0 -1.2rem -3.5rem;
   text-align: left;
   font-size: 1.6rem;
-}
-
-.expand-all,
-.retract-all {
-  font-size: 1.6rem;
-  display: inline-block;
-  margin: 0 1.4rem;
 }
 
 /******************* CV ******************/
@@ -207,6 +201,17 @@ body.about a.about {
 .research-content a:focus {
   outline: none;
   text-decoration: none;
+}
+
+.expand-all,
+.retract-all {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: 0 1.4rem;
+}
+
+.expand-retract {
+  text-align: center;
 }
 
 /******************* iPad (portrait and landscape) responsive ******************/
