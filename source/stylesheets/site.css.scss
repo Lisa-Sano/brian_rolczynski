@@ -220,6 +220,11 @@ body.about a.about {
   text-align: center;
 }
 
+.research-img {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
 /******************* iPad (portrait and landscape) responsive ******************/
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -264,20 +269,20 @@ body.about a.about {
   }
 
   .research-summary {
-    font-size: 1.85rem;
+    font-size: 2.1rem;
   }
 
   .research-content li {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 
   .research-content .description p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: 1.25;
   }
 
   .location {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 
   .publications li {
