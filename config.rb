@@ -66,8 +66,8 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.remote = 'shared'
+  deploy.deploy_method = :git
+  deploy.remote = 'https://github.com/rolczynskis/rolczynskis.github.io.git'
   deploy.branch = 'master'
   deploy.build_before = true
 end
