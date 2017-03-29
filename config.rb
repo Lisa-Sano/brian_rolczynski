@@ -64,3 +64,10 @@ configure :build do
 
   activate :relative_assets
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.remote = 'shared'
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
