@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   var email = "brolczynski";
   var domain_name = "uchicago.edu";
-  $('#email-link').attr("href", "mailto:" + email + "@" + domain_name);
+  $('#email-link, #contact-footer-link').attr("href", "mailto:" + email + "@" + domain_name);
 
   $('.toggle-link').click(function(){
     $(this).text(function(i,old){
