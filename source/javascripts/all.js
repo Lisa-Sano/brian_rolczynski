@@ -58,6 +58,6 @@ $(document).ready(function() {
   $('#email-icon').hover(function() {
     $(this).attr('src','/gifs/EMAIL.gif');
   },function() {
-    $(this).attr('src','/images/EMAIL_ICON.gif');
+    $(this).attr('src','/images/EMAIL_ICON.png');
   });
 });

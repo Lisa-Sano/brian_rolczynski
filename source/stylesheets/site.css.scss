@@ -17,7 +17,7 @@ body {
   background: rgb(0,0,0);
   text-align: center;
   margin: auto;
-  font-family: "Andale Mono", "Lucida Console";
+  font-family: "Andale Mono", "Lucida Console", sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -122,7 +122,6 @@ body.about a.about {
   font-size: 1.5rem;
   margin: 2rem 0;
   line-height: 1.1;
-  letter-spacing: -4px;
 }
 
 .publications-section ol {
