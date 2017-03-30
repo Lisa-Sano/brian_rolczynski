@@ -119,9 +119,17 @@ body.about a.about {
 
 .publications li {
   text-align: left;
-  font-size: 1.5rem;
-  margin: 2rem 0;
+  font-size: 1.4rem;
+  /*margin: 2rem 0;*/
   line-height: 1.1;
+}
+
+.publication-wrapper {
+  margin: 2rem 0;
+}
+
+.publications p {
+  margin: 0;
 }
 
 .publications-section ol {
