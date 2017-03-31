@@ -57,27 +57,13 @@ a:focus {
 /*******************HOME******************/
 
 .jablonski {
-  width: 90%;
-  min-width: 360px;
+  width: 100%;
   margin-top: 3rem;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: normal;
-}
-
-.full_cv {
-  display: none;
-}
-
-.cv_button {
-  width: 40%;
-  margin: 1rem auto 0 auto;
-  background-color: #000;
-  border: 1px solid #fff;
-  padding: 0.5rem;
-  color: #fff;
 }
 
 
@@ -128,7 +114,6 @@ body.about a.about {
 .publications li {
   text-align: left;
   font-size: 1.4rem;
-  /*margin: 2rem 0;*/
   line-height: 1.1;
 }
 
@@ -175,6 +160,19 @@ body.about a.about {
 
 .curriculum_vitae .container {
   min-height: 78%;
+}
+
+.full_cv {
+  display: none;
+}
+
+.cv_button {
+  width: 40%;
+  margin: 1rem auto 0 auto;
+  background-color: #000;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  color: #fff;
 }
 
 /******************* ABOUT ME ******************/
@@ -265,8 +263,7 @@ body.about a.about {
 }
 
 .headshot img {
-  width: 90%;
-  min-width: 360px;
+  width: 100%;
   max-width: 680px;
   margin-top: 2rem;
 }
