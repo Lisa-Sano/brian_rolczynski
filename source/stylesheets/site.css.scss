@@ -66,7 +66,6 @@ h1 {
   font-weight: normal;
 }
 
-
 /******************* HEADER ******************/
 
 .header-brian {
@@ -159,10 +158,6 @@ body.about a.about {
 
 /******************* CV ******************/
 
-.instruction {
-  margin-top: -1.5rem;
-}
-
 .curriculum_vitae .container {
   min-height: 78%;
 }
@@ -171,13 +166,17 @@ body.about a.about {
   display: none;
 }
 
-.cv_button {
+.cv_button, .cv_button_backup_full {
   width: 40%;
   margin: 1rem auto 0 auto;
   background-color: #000;
   border: 1px solid #fff;
   padding: 0.5rem;
   color: #fff;
+}
+
+.cv_button_backup_full {
+  width: 175px;
 }
 
 /******************* ABOUT ME ******************/
