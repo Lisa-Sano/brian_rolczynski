@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $('map').imageMapResize();
 
-  var email = "brolczynski";
-  var domain_name = "uchicago.edu";
+  var email = "brian.rolczynski";
+  var domain_name = "gmail.com";
   $('#email-link, #contact-footer-link').attr("href", "mailto:" + email + "@" + domain_name);
 
   $('.toggle-link').click(function(){
