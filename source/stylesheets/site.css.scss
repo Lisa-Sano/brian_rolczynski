@@ -17,7 +17,7 @@ body {
   background: rgb(0,0,0);
   text-align: center;
   margin: auto;
-  font-family: "Andale Mono", "Lucida Console";
+  font-family: "Andale Mono", "Lucida Console", sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -47,12 +47,17 @@ a:focus {
   color: #fff;
 }
 
+.content {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 
 /*******************HOME******************/
 
 .jablonski {
-  width: 90%;
-  min-width: 360px;
+  width: 100%;
   margin-top: 3rem;
 }
 
@@ -61,31 +66,17 @@ h1 {
   font-weight: normal;
 }
 
-.full_cv {
-  display: none;
-}
-
-.cv_button {
-  width: 40%;
-  margin: 1rem auto 0 auto;
-  background-color: #000;
-  border: 1px solid #fff;
-  padding: 0.5rem;
-  color: #fff;
-}
-
-
 /******************* HEADER ******************/
 
 .header-brian {
   margin-top: 2rem;
-  width: 80%;
-  max-width: 500px;
+  width: 90%;
+  max-width: 400px;
 }
 
 .header-icons {
-  width: 80%;
-  max-width: 500px;
+  width: 90%;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 
@@ -93,13 +84,15 @@ h1 {
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
 }
+
 .header-icons img {
   width: 14%;
   vertical-align: top;
   display: inline-block;
-  *display: inline;
+  /**display: inline;*/
   zoom: 1;
 }
+
 .stretch {
   width: 100%;
   display: inline-block;
@@ -119,10 +112,16 @@ body.about a.about {
 
 .publications li {
   text-align: left;
-  font-size: 1.5rem;
-  margin: 2rem 0;
+  font-size: 1.4rem;
   line-height: 1.1;
-  letter-spacing: -4px;
+}
+
+.publication-wrapper {
+  margin: 1rem 0;
+}
+
+.publications p {
+  margin: 0;
 }
 
 .publications-section ol {
@@ -152,14 +151,32 @@ body.about a.about {
   font-size: 1.6rem;
 }
 
-/******************* CV ******************/
-
-.instruction {
-  margin-top: -1.5rem;
+.spacer {
+  position: relative;
+  top: 22px;
 }
+
+/******************* CV ******************/
 
 .curriculum_vitae .container {
   min-height: 78%;
+}
+
+.full_cv {
+  display: none;
+}
+
+.cv_button, .cv_button_backup_full {
+  width: 40%;
+  margin: 1rem auto 0 auto;
+  background-color: #000;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.cv_button_backup_full {
+  width: 175px;
 }
 
 /******************* ABOUT ME ******************/
@@ -177,7 +194,6 @@ body.about a.about {
 .research-content {
   text-align: left;
   margin: 0 auto;
-  width: 90%;
 }
 
 .research-summary {
@@ -194,7 +210,7 @@ body.about a.about {
 
 .location {
   margin-bottom: 0.75rem;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   font-size: 1.8rem;
 }
 
@@ -219,7 +235,7 @@ body.about a.about {
 
 .expand-all,
 .retract-all {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   display: inline-block;
   margin: 0 1.4rem;
 }
@@ -233,11 +249,32 @@ body.about a.about {
   margin-bottom: 2rem;
 }
 
+.nrl-research-img {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+#nrl-images {
+  display: flex;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #nrl-images {
+    flex-direction: column-reverse;
+  }
+
+  .nrl-research-img {
+    width: 90%;
+  }
+}
+
 /******************* iPad (portrait and landscape) responsive ******************/
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .jablonski {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 }
 
@@ -246,12 +283,13 @@ body.about a.about {
 
 @media only screen and (min-width : 1024px) {
   .jablonski {
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
 }
 
 .headshot img {
-  width: 85%;
+  width: 100%;
+  max-width: 680px;
   margin-top: 2rem;
 }
 
@@ -260,11 +298,11 @@ body.about a.about {
 
 @media only screen and (min-width : 768px) {
   .jablonski {
-    max-width: 960px;
+    max-width: 680px;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .full_cv {
@@ -276,34 +314,29 @@ body.about a.about {
   }
 
   .research-summary {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
   }
 
   .research-content li {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
 
   .research-content .description p {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     line-height: 1.25;
   }
 
   .location {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
 
   .publications li {
-    font-size: 2.2rem;
+    font-size: 1.3rem;
     margin-left: 4rem;
   }
 
   .publications-section h2 {
-    font-size: 2.4rem;
-  }
-
-  #expand-all,
-  #retract-all {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -311,8 +344,8 @@ body.about a.about {
 /******************* FOOTER ******************/
 
 footer {
-  width: 85%;
-  margin: 3rem auto 0 auto;
+  width: 90%;
+  margin: 4rem auto 0 auto;
 }
 
 .footer-links {
@@ -338,6 +371,6 @@ footer {
 
 @media only screen and (min-width : 768px) {
     .footer-links {
-      font-size: 1.6rem;
+      font-size: 1.15rem;
     }
 }

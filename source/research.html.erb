@@ -11,22 +11,50 @@ header: RESEARCH
   </div>
 
   <section>
+    <p class="location">@NRL</p>
+    <p class="research-summary">How to optimize chemical environments to promote long-lived quantum processes and energy transport</p>
+    <ol>
+      <a data-toggle="collapse" href="#description8"><li>Prolonging quantum coherence by inducing correlated environmental perturbations</li></a>
+      <div id="description8" class="description collapse">
+        <p>Quantum coherence is studied in many different quantum substrates, with different associated coherence lifetimes. Molecular substrates have very fast dephasing compared to other types, such as nuclear spins or nitrogen vacancies in diamond lattices. Despite this deficiency, it would be beneficial for technological speed, footprint, and scalability if molecular systems could be used for applications that require long-lived quantum coherences. Furthermore, these substrates are all open quantum systems with similar dephasing mechanisms, namely the perturbations from their respective environments. Therefore, if principles can be deduced to optimize dephasing in molecular systems, in principle they could also be applied to these other systems. Molecular systems have the additional advantage of tunability, potentially in a high-throughput mode, which makes them a good model system.</p>
+        <p>In this project, I am using DNA as a scaffold to prepare networks of chromophores with well-controlled intermolecular distances. My goal is to engineer not only the chromophore coupling, but more importantly the coupling among their perturbative environments. If environment-environment coupling can be induced, then these environmental motions may synchronize, as described by the Kuramoto model. This synchronization, even of environmental vibrational modes with distinct natural frequencies, may correlate the perturbations of the electronic states and prolong the dephasing time of the associated excitonic coherences.</p>
+        <img src="/images/research_images/coupled_environments.png" class="research-img">
+      </div>
+
+      <a data-toggle="collapse" href="#description7"><li>Deducing feature importance of energy transfer data sets using machine-learning algorithms</li></a>
+      <div id="description7" class="description collapse">
+        <p>Biology uses chromophore antennas to collect energy from light and funnel it toward regions where it may be extracted. This energy transfer largely occurs by Förster Resonance Energy Transfer, which depends on the distance and orientations of the energy relay’s constituent chromophores. While these parameters can be controlled in their protein environments, it is a challenge to control them in artificial systems.</p>
+        <p>We have synthesized a large library of chromophore networks embedded on DNA scaffolds, and obtained steady-state fluorescence spectra for each sample. While we know the chromophore positions, we do not know which sites are most important for energy transfer, or which sites may represent traps that reduce energy transfer efficiency. Unfortunately, the data set is too large and depends on too many parameters to understand by human inspection alone. I have used machine-learning algorithms to train a predictive model based on this data. Using this model, I have determined the feature importance for each chromophore along the relay.</p>
+        <div id="NRL-images">
+          <img src="/images/research_images/NRL_2_1.png" class="nrl-research-img">
+          <img src="/images/research_images/NRL_2_2.png" class="nrl-research-img">
+          <img src="/images/research_images/NRL_2_3.png" class="nrl-research-img">
+        </div>
+      </div>
+
+      <a data-toggle="collapse" href="#description6"><li>Modeling energy transfer in systems that use DNA nanotechnology</li></a>
+      <div id="description6" class="description collapse">
+        <p>DNA scaffolds offer Angstrom-scale accuracy for the positions of attached chromophores. They can be brought very close to each other, such that their electronic states mix. In these cases, it is difficult to deduce the energy or rate information from the absorption and fluorescence spectra alone, because energy transfer processes occur among mixed donor and acceptor states. I am implementing the generalized FRET model originally published by Scholes, Jordanides, and Fleming  (JPC B 2001, 105, 1640-51) in order to clarify the electronic processes occurring in our decorated DNA scaffolds.</p>
+      </div>
+    </ol>
+  </section>
+
+  <section>
     <p class="location">@Uchicago</p>
     <p class="research-summary">How collective behaviors interface with quantum processes</p>
     <ol>
-      <a data-toggle="collapse" href="#description1"><li>Protected quantum coherences</li></a>
-      <div id="description1" class="description collapse">
-        <p>Quantum coherences appear when superpositions of quantum states have a phase relationship. They dephase from interactions with their environment, which is why quantum states are usually exploited (a) at low temperature and/or (b) isolated from their environments. However, sometimes systems can resist dephasing, even in physiological environments.</p>
-        <p>If the quantum states are perturbed in unison by their environments, then their phase relationship is preserved because they jitter in common. I study how photosynthesis employs this strategy using synchronized, correlated nuclear environments for each excited state.</p>
-        <p>For example, I use new optical 2D spectroscopy to observe the vibrational perturbations occurring for distinct excitons in the Fenna-Matthews-Olson pigment-protein complex. The results show synchronized perturbations for these states.</p>
-        <p>Using a similar technique, I also measure evidence of correlation between the nuclear modes of distinct excitons. As seen in examples as diverse as ocean waves and cricket chirps, correlated perturbations between distinct oscillators can lead to spontaneous synchronization. Because synchronization can prolong quantum coherences, these findings suggest an additional route to bolster the lifetime of quantum coherences in physiological environments.</p>
+      <a data-toggle="collapse" href="#description5"><li>Protected quantum coherences</li></a>
+      <div id="description5" class="description collapse">
+        <p>Quantum coherences can appear when superpositions of excitons are coherently excited. They dephase from interactions with their respective environments, which is why quantum coherences are usually exploited (a) at low temperature and/or (b) isolated from their environments. However, sometimes systems exhibit slower dephasing than expected, even in physiological environments.</p>
+        <p>If the nuclear motions perturbing the quantum states are correlated to each other, then the dephasing can be slowed. I study whether photosynthesis employs this strategy.</p>
+        <p>Using 2D electronic spectroscopy, I observe the time-ordered vibrational motion occurring on distinct excitons in the Fenna-Matthews-Olson (FMO) pigment-protein complex in different time periods. By allowing one exciton’s spectral motion to propagate, and then checking a distinct exciton’s spectral motion at a later time, I can detect if the unoccupied exciton’s associated nuclear bath has propagated while an entirely different exciton was excited.</p>
         <img src="/images/research_images/research1.png" class="research-img">
       </div>
 
-      <a data-toggle="collapse" href="#description2"><li>Decongesting congested spectra</li></a>
-      <div id="description2" class="description collapse">
+      <a data-toggle="collapse" href="#description4"><li>Decongesting congested spectra</li></a>
+      <div id="description4" class="description collapse">
         <p>There are plenty of reasons to want to find a small peak hidden in a congested optical spectrum.</p>
-        <p>The congestion often arises because electronic states are pinned onto their nuclear scaffolds. When a coherent state is on a jittering scaffold, it dissipates quantum information. Fast dissipation causes dynamic inhomogenous broadening, while slower dissipation causes homogenous broadening. Even 2D spectroscopy, which is supposed to be good at distinguishing spectral features, suffers from this effect.</p>
+        <p>The congestion often arises because electronic states are pinned onto their nuclear scaffolds. When a coherent state is on a jittering scaffold, it dissipates quantum information. Fast dissipation causes dynamic inhomogeneous broadening, while slower dissipation causes homogeneous broadening. Even 2D spectroscopy, which is supposed to be good at distinguishing spectral features, suffers from this effect.</p>
         <p>By eliminating the fast component in the time domain, the spectra become much better resolved. This technique works on experimental and calculated (HEOM) 2D spectra.</p>
         <img src="/images/research_images/research2.png" class="research-img">
       </div>
@@ -35,7 +63,7 @@ header: RESEARCH
       <div id="description3" class="description collapse">
         <p>Like matter, light has a quantized orbital angular momentum. This degree of freedom promises Tbit/s optical multiplexing, denser qubits, improved quantum communication, and more.</p>
         <p>However, this "twisted" light is currently read using impractical and expensive optical techniques. Taking a cue from conventional optical detectors, it would be better to use a solid state medium to read out the orbital angular momentum of the light.</p>
-        <p>We have found unique spectra and dynamics depending on the orbital angular momentum encoded into otherwise identical light. This effect arises from the unique current density patterns generated by light whose wavefronts are helical rather than planar, generating excitations with coherent spatial patterns that encode the quantum information. These results invite new basic science. For example, exploring the creation of magenetic fields by the light, as it stirs a transverse current density of the sample much like a current traveling through a circular wire.</p>
+        <p>We have found unique spectra and dynamics depending on the orbital angular momentum encoded into otherwise identical light. This effect arises from the unique current density patterns generated by light whose wavefronts are helical rather than planar, generating excitations with coherent spatial patterns that encode the quantum information. These results invite new basic science. For example, exploring the creation of magnetic fields by the light, as it stirs a transverse current density of the sample much like a current traveling through a circular wire.</p>
         <img src="/images/research_images/research3.png" class="research-img">
       </div>
     </ol>
@@ -45,15 +73,15 @@ header: RESEARCH
     <p class="location">@Northwestern</p>
     <p class="research-summary">How structure impacts function in heterogeneous organic photovoltaic materials</p>
     <ol>
-      <a data-toggle="collapse" href="#description4"><li>Defrayed exciton dissociation increases power conversion efficiencies</li></a>
-      <div id="description4" class="description collapse">
+      <a data-toggle="collapse" href="#description2"><li>Defrayed exciton dissociation increases power conversion efficiencies</li></a>
+      <div id="description2" class="description collapse">
         <p>About ten years ago, heterogeneous polymers began breaking records in power conversion efficiencies set by homopolymers such as P3HT, but it was not immediately clear why. Traditional benchmarks such as the film crystallinity often looked worse in these heteropolymers and, contrary to expectation, processes like annealing often made them perform worse. Even their redder absorption spectra could not fully explain their higher efficiencies.</p>
         <p>Using transient spectroscopy, I studied the intradonor events occuring before charge transfer within the bulk heterojunction films. Organic photovoltaics traditionally rely on donor-acceptor interfaces to drive exciton dissociation. The associated energy cost is taxed from every dissociation event, passing a substantial penalty onto the power conversion efficiency. We found that the dissimilar monomer units along the polymer backbone partially defrayed the cost of exciton dissociation by preparing charge transfer states within the polymer.</p>
         <p>Furthermore, the extent of this charge transfer state formation within the solvated polymers directly correlated to the power conversion efficiencies obtained from the intact bulk heterojunction device. This was an unexpected result, as it does not consider the aggregation characteristics or time-domain mesoscale dynamics that are traditionally mainly associated with device efficiencies.</p>
       </div>
 
-      <a data-toggle="collapse" href="#description5"><li>Self-assembly by overriding intermolecular interactions</li></a>
-      <div id="description5" class="description collapse">
+      <a data-toggle="collapse" href="#description1"><li>Self-assembly by overriding intermolecular interactions</li></a>
+      <div id="description1" class="description collapse">
         <p>Aggregation characteristics are often very important in organic photovoltaics, because they determine exciton dissociation efficiencies, as well as free charge carrier mobilities and collection probabilities. Notoriously, it is difficult to get the same device parameters from one bulk heterojunction device to the next, in large part due to variations in the aggregation characteristics even under the same fabrication conditions. Methodologies to address this problem can include expensive annealing, vapor deposition, and related processes in order to tune or repair the aggregation characteristics.</p>
         <p>Spontaneous self-assembly is a promising response to these challenges. It happens "for free," ie. without processing steps, and can produce highly regular aggregates. Using X-ray diffraction and atomic force microscopy, we found that certain thiophene-derived oligomers can spontaneously form long, crystalline ribbons in their thin films. This effect occurs because the distinct sides of the oligomer have unique electrostatic effects, which variably dominate under distinct backbone length scales. By achieving a balance, regular order can be achieved across long distances.</p>
       </div>
